@@ -1,0 +1,25 @@
+﻿@using System.Timers
+
+<div>
+    <div class="time">@DateTimeNow.ToString("t")</div>
+    <div class="date">@DateTimeNow.ToString("D")</div>
+</div>
+
+@code {
+    public DateTime DateTimeNow = DateTime.Now;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var updateTimeDisplayTimer = new Timer();
+        updateTimeDisplayTimer.Interval = 500;
+        updateTimeDisplayTimer.Elapsed += UpdateTimeDisplay;
+        updateTimeDisplayTimer.AutoReset = true;
+        updateTimeDisplayTimer.Enabled = true;
+    }
+
+    private void UpdateTimeDisplay(Object source, ElapsedEventArgs e)
+    {
+        DateTimeNow = DateTime.Now;
+        StateHasChanged();
+    }
+}
