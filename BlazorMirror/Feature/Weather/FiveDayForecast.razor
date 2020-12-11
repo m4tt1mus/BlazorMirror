@@ -1,0 +1,53 @@
+﻿@using System.Timers
+@inject AccuWeatherApi AccuWeatherApi
+
+@if (FiveDaysForecasts != null)
+{
+    <div>
+        <div>
+            @foreach (DaysForecast daysForecast in FiveDaysForecasts)
+            {
+                if (daysForecast != null)
+                {
+                    <div class="row five-day-forecast">
+                        <div class="col">
+                            @daysForecast.Day.ToString("ddd")
+                        </div>
+                        <div class="col text-right">
+                            <img src="@daysForecast.DescriptionIconLocation"/>
+                        </div>
+                        <div class="col text-right">
+                            @daysForecast.High?.Value
+                            &#176;@daysForecast.High?.Unit
+                        </div>
+                        <div class="col text-right">
+                            @daysForecast.Low?.Value
+                            &#176;@daysForecast.Low?.Unit
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+}
+
+@code {
+    public DaysForecast[] FiveDaysForecasts { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
+
+        var timer = new Timer();
+        timer.Interval = 3600000;
+        timer.Elapsed += async (sender, arguments)
+            => await UpdateCurrentConditions(sender, arguments);
+        timer.AutoReset = true;
+        timer.Enabled = true;
+    }
+
+    private async Task UpdateCurrentConditions(object sender, ElapsedEventArgs e)
+    {
+        FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
+    }
+}

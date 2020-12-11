@@ -1,0 +1,61 @@
+﻿@using System.Timers
+@inject AccuWeatherApi AccuWeatherApi
+
+@if (CurrentConditions != null)
+{
+    <div class="current-weather">
+        <div class="retrieval-datetime">
+            Updated: @CurrentConditions.DateTime.ToString("g")
+        </div>
+        <div class="row">
+            <div class="col temp">
+                @CurrentConditions.Temperature.Value&#176;@CurrentConditions.Temperature.Unit
+            </div>
+        </div>
+        <div class="row conditions">
+            <div class="col">
+                <div class="label">Condition</div>
+                <div class="value">
+                    <img src="@CurrentConditions.DescriptionIconLocation" />
+                </div>
+                <div class="desc">@CurrentConditions.Description</div>
+            </div>
+            <div class="col">
+                <div class="label">UV</div>
+                <div class="value">@CurrentConditions.Uv.Index</div>
+                <div class="desc">@CurrentConditions.Uv.IndexDescription</div>
+            </div>
+            <div class="col">
+                <div class="label">Wind</div>
+                <div class="value">@CurrentConditions.Wind.Direction</div>
+            </div>
+            <div class="col">
+                <div class="label">Wind</div>
+                <div class="value">@CurrentConditions.Wind.Speed</div>
+                <div class="desc">@CurrentConditions.Wind.SpeedUnit</div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    public Conditions CurrentConditions { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        CurrentConditions = await AccuWeatherApi.GetCurrentConditions();
+
+        var timer = new Timer();
+        timer.Interval = 3600000;
+        timer.Elapsed += async (sender, arguments)
+            => await UpdateCurrentConditions(sender, arguments);
+        timer.AutoReset = true;
+        timer.Enabled = true;
+    }
+
+    private async Task UpdateCurrentConditions(object sender, ElapsedEventArgs e)
+    {
+        CurrentConditions = await AccuWeatherApi.GetCurrentConditions();
+    }
+
+}
