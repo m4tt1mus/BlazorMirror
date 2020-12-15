@@ -1,5 +1,5 @@
 Setup:
-Create a appsettings.json file in wwwroot and fill out he values based on the follows example:
+Create a appsettings.json file in wwwroot and fill out he values based on the following example:
 ```
 {
   "AccuWeather": {
