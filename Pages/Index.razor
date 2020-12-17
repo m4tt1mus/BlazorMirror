@@ -1,7 +1,15 @@
 ﻿@page "/"
 
-<div>
-    <TemporalInfo />
-    <CurrentWeather />
-    <FiveDayForecast />
+<div class="row component-row">
+    <div class="col">
+        <TemporalInfo />
+    </div>
+    <div class="col-3">
+        <div class="component">
+            <CurrentWeather />
+        </div>
+        <div class="component">
+            <FiveDayForecast />
+        </div>
+    </div>
 </div>
