@@ -1,4 +1,6 @@
 ﻿@using System.Timers
+@implements IDisposable
+
 
 <div>
     <div class="time">@DateTimeNow.ToString("t")</div>
@@ -6,15 +8,17 @@
 </div>
 
 @code {
+    private Timer _timer;
     public DateTime DateTimeNow = DateTime.Now;
+
 
     protected override async Task OnInitializedAsync()
     {
-        var updateTimeDisplayTimer = new Timer();
-        updateTimeDisplayTimer.Interval = 500;
-        updateTimeDisplayTimer.Elapsed += UpdateTimeDisplay;
-        updateTimeDisplayTimer.AutoReset = true;
-        updateTimeDisplayTimer.Enabled = true;
+        _timer = new Timer();
+        _timer.Interval = 500;
+        _timer.Elapsed += UpdateTimeDisplay;
+        _timer.AutoReset = true;
+        _timer.Enabled = true;
     }
 
     private void UpdateTimeDisplay(Object source, ElapsedEventArgs e)
@@ -22,4 +26,10 @@
         DateTimeNow = DateTime.Now;
         StateHasChanged();
     }
+
+    public void Dispose()
+    {
+        _timer.Dispose();
+    }
+
 }
