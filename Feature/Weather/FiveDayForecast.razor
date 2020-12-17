@@ -1,5 +1,6 @@
 ﻿@using System.Timers
 @inject AccuWeatherApi AccuWeatherApi
+@implements IDisposable
 
 @if (FiveDaysForecasts != null)
 {
@@ -32,22 +33,29 @@
 }
 
 @code {
+    private Timer _timer;
     public DaysForecast[] FiveDaysForecasts { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
 
-        var timer = new Timer();
-        timer.Interval = 3600000;
-        timer.Elapsed += async (sender, arguments)
+        _timer = new Timer();
+        _timer.Interval = 3600000;
+        _timer.Elapsed += async (sender, arguments)
             => await UpdateCurrentConditions(sender, arguments);
-        timer.AutoReset = true;
-        timer.Enabled = true;
+        _timer.AutoReset = true;
+        _timer.Enabled = true;
     }
 
     private async Task UpdateCurrentConditions(object sender, ElapsedEventArgs e)
     {
         FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
     }
+
+    public void Dispose()
+    {
+        _timer.Dispose();
+    }
+
 }
