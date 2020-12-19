@@ -1,1 +1,7 @@
-﻿
+﻿.row {
+    font-size: 2rem;
+}
+
+.row img {
+    height: 3rem;
+}

@@ -1,16 +1,22 @@
 ﻿.temp {
     font-size: 9rem;
     line-height: 8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.conditions.row {
+    padding-bottom: 2rem;
 }
 
 .label {
-    font-size: 0.75rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .value {
-    height: 3rem;
-    font-size: 2.5rem;
+    height: 5rem;
+    font-size: 4.5rem;
     text-align: center;
 }
 
@@ -19,13 +25,13 @@
 }
 
 .desc {
+    font-size: 2rem;
     text-align: center;
 }
 
 .retrieval-datetime {
-    font-size: .75rem;
-    padding: .5em 0;
-    text-align: right;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .conditions .col {
