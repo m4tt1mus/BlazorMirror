@@ -1,7 +1,7 @@
 ﻿.temp {
     font-size: 9rem;
     line-height: 8rem;
-    text-align: center;
+    text-align: right;
     padding-bottom: 1rem;
 }
 
@@ -20,10 +20,10 @@
     text-align: center;
 }
 
-.value img {
-    height: 100%;
-    margin-top: -0.25em;
-}
+    .value img {
+        height: 100%;
+        margin-top: -0.25em;
+    }
 
 .desc {
     font-size: 2rem;
@@ -32,10 +32,9 @@
 
 .retrieval-datetime {
     font-size: 1rem;
-    text-align: center;
+    text-align: right;
 }
 
 .conditions .col {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 0.75rem;
 }

@@ -13,7 +13,7 @@
                 @CurrentConditions.Temperature.Value&#176;@CurrentConditions.Temperature.Unit
             </div>
         </div>
-        <div class="row conditions">
+        <div class="row conditions float-right">
             <div class="col">
                 <div class="label">Condition</div>
                 <div class="value">
@@ -26,8 +26,6 @@
                 <div class="value">@CurrentConditions.Uv.Index</div>
                 <div class="desc">@CurrentConditions.Uv.IndexDescription</div>
             </div>
-        </div>
-        <div class="row conditions">
             <div class="col">
                 <div class="label">Wind</div>
                 <div class="value">@CurrentConditions.Wind.Direction</div>
@@ -39,6 +37,7 @@
             </div>
         </div>
     </div>
+    <div class="clearfix"></div>
 }
 
 @code {
