@@ -1,1 +1,23 @@
-<?xml version="1.0" ?><svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Snow" stroke="none" stroke-width="1"><g id="Group" stroke="#979797" transform="translate(3.000000, 3.000000)"><g><path d="M9.28571429,0.928571429 L13,3.71428571 L16.7142857,0.928571429 M25.0714286,9.28571429 L22.2857143,13 L25.0714286,16.7142857 M16.7142857,25.0714286 L13,22.2857143 L9.28571429,25.0714286 M0.928571429,16.7142857 L3.71428571,13 L0.928571429,9.28571429" id="Path-12" stroke-linecap="round" stroke-width="2"/><circle cx="13" cy="13" fill="#979797" id="Oval-9" r="1.85714286"/><path d="M13,0 L13,26" id="Path-13" stroke-linecap="round" stroke-width="2"/><path d="M0,13 L26,13" id="Path-14" stroke-linecap="round" stroke-width="2"/><path d="M3.71428571,3.71428571 L22.2857143,22.2857143" id="Path-16" stroke-linecap="round" stroke-width="2"/><path d="M3.71428571,22.2857143 L22.2857143,3.71428571" id="Path-17" stroke-linecap="round" stroke-width="2"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#979797;stroke:#FFFFFF;}
+</style>
+<desc></desc>
+<g id="Snow">
+	<g id="Group" transform="translate(3.000000, 3.000000)">
+		<g>
+			<path id="Path-12" class="st0" d="M9.3,0.9L13,3.7l3.7-2.8 M25.1,9.3L22.3,13l2.8,3.7 M16.7,25.1L13,22.3l-3.7,2.8 M0.9,16.7
+				L3.7,13L0.9,9.3"/>
+			<circle id="Oval-9" class="st1" cx="13" cy="13" r="1.9"/>
+			<path id="Path-13" class="st0" d="M13,0v26"/>
+			<path id="Path-14" class="st0" d="M0,13h26"/>
+			<path id="Path-16" class="st0" d="M3.7,3.7l18.6,18.6"/>
+			<path id="Path-17" class="st0" d="M3.7,22.3L22.3,3.7"/>
+		</g>
+	</g>
+</g>
+</svg>

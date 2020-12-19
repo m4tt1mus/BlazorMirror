@@ -1,1 +1,24 @@
-<?xml version="1.0" ?><svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Clearly-Night" stroke="none" stroke-width="1"><g stroke="#979797" transform="translate(4.000000, 3.000000)"><path d="M8.58855755,0.76761511 C7.57578659,2.61805976 7,4.7417888 7,7 C7,14.1797017 12.8202983,20 20,20 C21.5486507,20 23.034054,19.7292058 24.4114424,19.2323849 C22.2042341,23.2651989 17.9214905,26 13,26 C5.82029825,26 0,20.1797017 0,13 C0,7.36894896 3.58023357,2.57410627 8.58855755,0.76761511 Z" id="Combined-Shape" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polygon fill="#D8D8D8" id="Star" points="12.25 6.39154576 12.1030537 6.45225425 12.115382 6.29374004 12.0122359 6.17274575 12.1668015 6.13548708 12.25 6 12.3331985 6.13548708 12.4877641 6.17274575 12.384618 6.29374004 12.3969463 6.45225425"/><polygon fill="#D8D8D8" id="Star" points="20 6.56618304 19.4122147 6.80901699 19.4615279 6.17496018 19.0489435 5.69098301 19.667206 5.5419483 20 5 20.332794 5.5419483 20.9510565 5.69098301 20.5384721 6.17496018 20.5877853 6.80901699"/><polygon fill="#D8D8D8" id="Star" points="15.5 9.78309152 15.2061074 9.9045085 15.230764 9.58748009 15.0244717 9.3454915 15.333603 9.27097415 15.5 9 15.666397 9.27097415 15.9755283 9.3454915 15.769236 9.58748009 15.7938926 9.9045085"/><polygon fill="#D8D8D8" id="Star" points="16 2.56618304 15.4122147 2.80901699 15.4615279 2.17496018 15.0489435 1.69098301 15.667206 1.5419483 16 1 16.332794 1.5419483 16.9510565 1.69098301 16.5384721 2.17496018 16.5877853 2.80901699"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#FFFFFF;}
+</style>
+<desc></desc>
+<g id="Clearly-Night">
+	<g transform="translate(4.000000, 3.000000)">
+		<path id="Combined-Shape" class="st0" d="M8.6,0.8C7.6,2.6,7,4.7,7,7c0,7.2,5.8,13,13,13c1.5,0,3-0.3,4.4-0.8
+			c-2.2,4-6.5,6.8-11.4,6.8C5.8,26,0,20.2,0,13C0,7.4,3.6,2.6,8.6,0.8z"/>
+		<polygon id="Star" class="st1" points="12.2,6.4 12.1,6.5 12.1,6.3 12,6.2 12.2,6.1 12.2,6 12.3,6.1 12.5,6.2 12.4,6.3 12.4,6.5 
+					"/>
+		<polygon id="Star_1_" class="st1" points="20,6.6 19.4,6.8 19.5,6.2 19,5.7 19.7,5.5 20,5 20.3,5.5 21,5.7 20.5,6.2 20.6,6.8 		
+			"/>
+		<polygon id="Star_2_" class="st1" points="15.5,9.8 15.2,9.9 15.2,9.6 15,9.3 15.3,9.3 15.5,9 15.7,9.3 16,9.3 15.8,9.6 15.8,9.9 
+					"/>
+		<polygon id="Star_3_" class="st1" points="16,2.6 15.4,2.8 15.5,2.2 15,1.7 15.7,1.5 16,1 16.3,1.5 17,1.7 16.5,2.2 16.6,2.8 		
+			"/>
+	</g>
+</g>
+</svg>

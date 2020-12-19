@@ -1,1 +1,18 @@
-<?xml version="1.0" ?><svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Tornado" stroke="none" stroke-width="1"><g fill="#D8D8D8" id="Rectangle-11" stroke="#979797" transform="translate(4.000000, 5.000000)"><rect height="1" width="9" x="6.5" y="20.5"/><rect height="1" width="11" x="8.5" y="15.5"/><rect height="1" width="17" x="5.5" y="10.5"/><rect height="1" width="17" x="2.5" y="5.5"/><rect height="1" width="23" x="0.5" y="0.5"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D8D8D8;stroke:#FFFFFF;}
+</style>
+<desc></desc>
+<g id="Tornado">
+	<g id="Rectangle-11" transform="translate(4.000000, 5.000000)">
+		<rect x="6.5" y="20.5" class="st0" width="9" height="1"/>
+		<rect x="8.5" y="15.5" class="st0" width="11" height="1"/>
+		<rect x="5.5" y="10.5" class="st0" width="17" height="1"/>
+		<rect x="2.5" y="5.5" class="st0" width="17" height="1"/>
+		<rect x="0.5" y="0.5" class="st0" width="23" height="1"/>
+	</g>
+</g>
+</svg>

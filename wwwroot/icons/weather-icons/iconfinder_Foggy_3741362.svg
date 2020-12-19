@@ -1,1 +1,27 @@
-<?xml version="1.0" ?><svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Light-Snow" stroke="none" stroke-width="1"><g id="Group-2" stroke="#979797" stroke-width="2" transform="translate(3.000000, 2.000000)"><path d="M9.64075822,4.50583286 C8.76235298,4.08656863 7.77895738,3.85185185 6.74074074,3.85185185 C3.01793243,3.85185185 0,6.86978428 0,10.5925926 C0,14.3154009 3.01793243,17.3333333 6.74074074,17.3333333 C8.57997198,17.3333333 10.2471575,16.5967179 11.4633749,15.4024092" id="Oval"/><path d="M9.96956753,13.5435375 C11.529699,15.8313205 14.156887,17.3333333 17.134889,17.3333333 C21.9213568,17.3333333 25.8015556,13.4531345 25.8015556,8.66666667 C25.8015556,3.88019884 21.9213568,0 17.134889,0 C12.9842561,0 9.51510686,2.91777867 8.66666667,6.81411072" id="Oval" stroke-linecap="round"/></g><circle cx="14" cy="29" id="Oval-10" r="1" stroke="#979797"/><circle cx="22" cy="23" id="Oval-10" r="1" stroke="#979797"/><circle cx="8.5" cy="22.5" id="Oval-10" r="1" stroke="#979797"/><circle cx="18.5" cy="26.5" id="Oval-10" r="1" stroke="#979797"/><polygon fill="#D8D8D8" id="Star-2" points="8 27 7 28.7320508 8 27 6 27 8 27 7 25.2679492 8 27 9 25.2679492 8 27 10 27 8 27 9 28.7320508" stroke="#979797" stroke-linecap="round" stroke-linejoin="round"/><polygon fill="#D8D8D8" id="Star-2" points="15 23 14 24.7320508 15 23 13 23 15 23 14 21.2679492 15 23 16 21.2679492 15 23 17 23 15 23 16 24.7320508" stroke="#979797" stroke-linecap="round" stroke-linejoin="round"/><polygon fill="#D8D8D8" id="Star-2" points="22 28 21 29.7320508 22 28 20 28 22 28 21 26.2679492 22 28 23 26.2679492 22 28 24 28 22 28 23 29.7320508" stroke="#979797" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;}
+	.st2{fill:none;stroke:#FFFFFF;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#D8D8D8;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<desc></desc>
+<g id="Light-Snow">
+	<g id="Group-2" transform="translate(3.000000, 2.000000)">
+		<path id="Oval" class="st0" d="M9.6,4.5C8.8,4.1,7.8,3.9,6.7,3.9C3,3.9,0,6.9,0,10.6s3,6.7,6.7,6.7c1.8,0,3.5-0.7,4.7-1.9"/>
+		<path id="Oval_1_" class="st1" d="M10,13.5c1.6,2.3,4.2,3.8,7.2,3.8c4.8,0,8.7-3.9,8.7-8.7S21.9,0,17.1,0C13,0,9.5,2.9,8.7,6.8"/>
+	</g>
+	<circle id="Oval-10" class="st2" cx="14" cy="29" r="1"/>
+	<circle id="Oval-10_1_" class="st2" cx="22" cy="23" r="1"/>
+	<circle id="Oval-10_2_" class="st2" cx="8.5" cy="22.5" r="1"/>
+	<circle id="Oval-10_3_" class="st2" cx="18.5" cy="26.5" r="1"/>
+	<polygon id="Star-2" class="st3" points="8,27 7,28.7 8,27 6,27 8,27 7,25.3 8,27 9,25.3 8,27 10,27 8,27 9,28.7 	"/>
+	<polygon id="Star-2_1_" class="st3" points="15,23 14,24.7 15,23 13,23 15,23 14,21.3 15,23 16,21.3 15,23 17,23 15,23 16,24.7 	
+		"/>
+	<polygon id="Star-2_2_" class="st3" points="22,28 21,29.7 22,28 20,28 22,28 21,26.3 22,28 23,26.3 22,28 24,28 22,28 23,29.7 	
+		"/>
+</g>
+</svg>
