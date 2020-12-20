@@ -40,17 +40,17 @@
     {
         FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
 
-        _timer = new Timer();
-        _timer.Interval = 3600000;
+        _timer = new Timer {Interval = 3600000};
         _timer.Elapsed += async (sender, arguments)
-            => await UpdateCurrentConditions(sender, arguments);
+            => await UpdateFiveDayForecast(sender, arguments);
         _timer.AutoReset = true;
         _timer.Enabled = true;
     }
 
-    private async Task UpdateCurrentConditions(object sender, ElapsedEventArgs e)
+    private async Task UpdateFiveDayForecast(object sender, ElapsedEventArgs e)
     {
         FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
+        StateHasChanged();
     }
 
     public void Dispose()

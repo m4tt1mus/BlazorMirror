@@ -14,6 +14,7 @@ namespace BlazorMirror.Feature.Weather
         public string LocationKey { get; set; }
         public string ApiKey { get; set; }
         public bool PullDataFromApi { get; set; } = true;
+        public bool EnableResponseLogging { get; set; }
 
         public AccuWeatherApi(
             IConfiguration configuration,
@@ -25,6 +26,7 @@ namespace BlazorMirror.Feature.Weather
             PullDataFromApi = !Configuration.GetValue<bool>("AccuWeather:UseFakeData");
             ApiKey = Configuration.GetValue<string>("AccuWeather:ApiKey");
             LocationKey = Configuration.GetValue<string>("AccuWeather:LocationKey");
+            EnableResponseLogging = Configuration.GetValue<bool>("AccuWeather:EnableResponseLogging");
         }
 
         public async Task<Conditions> GetCurrentConditions()
@@ -37,6 +39,10 @@ namespace BlazorMirror.Feature.Weather
             }
             rawStringResponse = rawStringResponse.Trim().TrimStart('[').TrimEnd(']');
             var jsonResponse = JObject.Parse(rawStringResponse);
+            if (EnableResponseLogging)
+            {
+                Console.WriteLine(jsonResponse);
+            }
 
             var conditions = new Conditions();
 
@@ -135,6 +141,10 @@ namespace BlazorMirror.Feature.Weather
 
             rawStringResponse = rawStringResponse.Trim();
             var jsonResponse = JObject.Parse(rawStringResponse);
+            if (EnableResponseLogging)
+            {
+                Console.WriteLine(jsonResponse);
+            }
 
             for (int i = 0; i < fiveDay.Length; i++)
             {

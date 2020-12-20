@@ -48,8 +48,7 @@
     {
         CurrentConditions = await AccuWeatherApi.GetCurrentConditions();
 
-        _timer = new Timer();
-        _timer.Interval = 3600000;
+        _timer = new Timer {Interval = 3600000 };
         _timer.Elapsed += async (sender, arguments)
             => await UpdateCurrentConditions(sender, arguments);
         _timer.AutoReset = true;
@@ -59,6 +58,7 @@
     private async Task UpdateCurrentConditions(object sender, ElapsedEventArgs e)
     {
         CurrentConditions = await AccuWeatherApi.GetCurrentConditions();
+        StateHasChanged();
     }
 
     public void Dispose()

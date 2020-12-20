@@ -9,13 +9,14 @@
 
 @code {
     private Timer _timer;
-    public DateTime DateTimeNow = DateTime.Now;
+    public DateTime DateTimeNow { get; set; }
 
 
     protected override async Task OnInitializedAsync()
     {
-        _timer = new Timer();
-        _timer.Interval = 500;
+        DateTimeNow = DateTime.Now;
+
+        _timer = new Timer { Interval = 500 };
         _timer.Elapsed += UpdateTimeDisplay;
         _timer.AutoReset = true;
         _timer.Enabled = true;
