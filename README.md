@@ -5,7 +5,8 @@ Create a appsettings.json file in wwwroot and fill out he values based on the fo
   "AccuWeather": {
     "ApiKey": "OfV4VvAOkTAlMSA2wj5x1omBA",
     "LocationKey": "351193",
-    "UseFakeData":  true
+    "UseFakeData":  true,
+    "EnableResponseLogging": false
   }
 }
 ```
