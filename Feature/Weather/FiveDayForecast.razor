@@ -49,8 +49,15 @@
 
     private async Task UpdateFiveDayForecast(object sender, ElapsedEventArgs e)
     {
-        FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
-        StateHasChanged();
+        try
+        {
+            FiveDaysForecasts = await AccuWeatherApi.GetFiveDayForecast();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
     }
 
     public void Dispose()

@@ -16,7 +16,7 @@
     {
         DateTimeNow = DateTime.Now;
 
-        _timer = new Timer { Interval = 500 };
+        _timer = new Timer { Interval = 1000 };
         _timer.Elapsed += UpdateTimeDisplay;
         _timer.AutoReset = true;
         _timer.Enabled = true;
@@ -24,8 +24,15 @@
 
     private void UpdateTimeDisplay(Object source, ElapsedEventArgs e)
     {
-        DateTimeNow = DateTime.Now;
-        StateHasChanged();
+        try
+        {
+            DateTimeNow = DateTime.Now;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
     }
 
     public void Dispose()
