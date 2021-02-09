@@ -90,6 +90,7 @@ namespace BlazorMirror.Feature.Weather
 
                 {"mostly cloudy", "iconfinder_Overcast_3741359"},
                 {"cloudy", "iconfinder_Overcast_3741359"},
+                {"dreary", "iconfinder_Overcast_3741359"},
                 {"dreary (overcast)", "iconfinder_Overcast_3741359"},
 
                 {"fog", "iconfinder_Foggy_3741362"},
