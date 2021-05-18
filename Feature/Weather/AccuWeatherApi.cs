@@ -96,6 +96,7 @@ namespace BlazorMirror.Feature.Weather
                 {"fog", "iconfinder_Foggy_3741362"},
 
                 {"showers", "iconfinder_Moderate_Rain_3741351"},
+                {"light rain", "iconfinder_Moderate_Rain_3741351"},
                 {"mostly cloudy w/ showers", "iconfinder_Moderate_Rain_3741351"},
                 {"partly sunny w/ showers", "iconfinder_Moderate_Rain_3741351"},
                 {"rain", "iconfinder_Moderate_Rain_3741351"},
