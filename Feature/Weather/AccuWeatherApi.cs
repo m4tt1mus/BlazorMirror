@@ -104,6 +104,7 @@ namespace BlazorMirror.Feature.Weather
 
                 {"t-storms", "iconfinder_Thunder_3741360"},
                 {"thunderstorms", "iconfinder_Thunder_3741360"},
+                {"thunderstorm", "iconfinder_Thunder_3741360"},
                 {"mostly cloudy w/ t-storms", "iconfinder_Thunder_3741360"},
                 {"partly sunny w/ t-storms", "iconfinder_Thunder_3741360"},
                 {"partly cloudy w/ t-storms", "iconfinder_Thunder_3741360"},
