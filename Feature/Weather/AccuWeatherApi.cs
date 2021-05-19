@@ -106,8 +106,14 @@ namespace BlazorMirror.Feature.Weather
                 {"thunderstorms", "iconfinder_Thunder_3741360"},
                 {"thunderstorm", "iconfinder_Thunder_3741360"},
                 {"mostly cloudy w/ t-storms", "iconfinder_Thunder_3741360"},
+                {"mostly cloudy w/ thunderstorms", "iconfinder_Thunder_3741360"},
+                {"mostly cloudy w/ thunderstorm", "iconfinder_Thunder_3741360"},
                 {"partly sunny w/ t-storms", "iconfinder_Thunder_3741360"},
+                {"partly sunny w/ thunderstorms", "iconfinder_Thunder_3741360"},
+                {"partly sunny w/ thunderstorm", "iconfinder_Thunder_3741360"},
                 {"partly cloudy w/ t-storms", "iconfinder_Thunder_3741360"},
+                {"partly cloudy w/ thunderstorms", "iconfinder_Thunder_3741360"},
+                {"partly cloudy w/ thunderstorm", "iconfinder_Thunder_3741360"},
 
                 {"flurries", "iconfinder_Snow_3741358"},
                 {"mostly cloudy w/ flurries", "iconfinder_Snow_3741358"},
@@ -128,8 +134,20 @@ namespace BlazorMirror.Feature.Weather
 
                 {"hazy moonlight", "iconfinder_Cloudy_Night_3741352"},
             };
-            var icon = iconDict[conditionsDescription.ToLower()];
-            return $"/icons/weather-icons/{icon}.svg";
+
+            var iconUrl = "/icons/Icon-round-Question_mark.svg";
+            if (iconDict.ContainsKey(conditionsDescription.ToLower()))
+            {
+                var icon = iconDict[conditionsDescription.ToLower()];
+                iconUrl = $"/icons/weather-icons/{icon}.svg";
+            }
+            else
+            {
+                Console.WriteLine($"Unable to find key for {conditionsDescription.ToLower()} in icon dictionary.");
+            }
+
+
+            return iconUrl;
         }
 
         public async Task<DaysForecast[]> GetFiveDayForecast()
