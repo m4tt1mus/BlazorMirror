@@ -4,7 +4,7 @@
 
 1. Install .NET in the root over the pi user
 1. Pull down the code into ~/BlazorMirror on your RaspberryPi from GitHub.
-1. Create a appsettings.json file in wwwroot and fill out he values based on the following example:
+1. Create a appsettings.json file in wwwroot and fill out the values based on the following example:
 
    ```json
    {
@@ -17,13 +17,7 @@
    }
    ```
 
-1. chmod the startup script to be executable. Here is more info: <https://askubuntu.com/questions/228304/how-do-i-run-a-script-at-start-up>
-
-   ```bash
-   chmod +x ~/BlazorMirror/InitScripts/startupScript.sh
-   ```
-
-1. Open a command prompt and run `crontab -e`. This will open the cronjobs configuration file for editing. On a blank line after the comments paste in `@reboot /home/pi/BlazorMirror/InitScripts/startupScript.sh`.
+1. Open a command prompt and run `cp ~/BlazorMirror/Autostart/BlazorMirror.desktop /etc/xdg/autostart/BlazorMirror.desktop`
 
 ## Troubleshooting
 
