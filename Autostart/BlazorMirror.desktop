@@ -3,5 +3,5 @@ Type=Application
 Name=BlazorMirror
 Comment=BlazorMirror
 NoDisplay=false
-Exec=/usr/bin/lxterminal -e /home/pi/BlazorMirror/InitScripts/init.sh
+Exec=/usr/bin/lxterminal -e /home/pi/BlazorMirror/Autostart/init.sh
 NotShowIn=GNOME;KDE;XFCE;
