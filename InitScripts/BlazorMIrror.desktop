@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=BlazorMirror
+Comment=BlazorMirror
+NoDisplay=false
+Exec=/usr/bin/lxterminal -e /home/pi/BlazorMirror/InitScripts/startupScript.sh
+NotShowIn=GNOME;KDE;XFCE;
