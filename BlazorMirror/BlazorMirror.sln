@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMirror", "BlazorMirror.csproj", "{1BD92746-B061-44DF-8F56-F9B284F12EF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMirror", "BlazorMirror.csproj", "{B2B352E3-2777-4AC9-ABCF-193F4DB592E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1BD92746-B061-44DF-8F56-F9B284F12EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1BD92746-B061-44DF-8F56-F9B284F12EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1BD92746-B061-44DF-8F56-F9B284F12EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1BD92746-B061-44DF-8F56-F9B284F12EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B352E3-2777-4AC9-ABCF-193F4DB592E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B352E3-2777-4AC9-ABCF-193F4DB592E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B352E3-2777-4AC9-ABCF-193F4DB592E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B352E3-2777-4AC9-ABCF-193F4DB592E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AE6B7025-E3B8-40DB-81B2-A086338D0FA0}
+		SolutionGuid = {5302D0B4-E196-469F-BDD5-EC9330E1B3DC}
 	EndGlobalSection
 EndGlobal
