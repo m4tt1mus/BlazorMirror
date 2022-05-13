@@ -4,6 +4,7 @@
 
 1. Install .NET in the root over the pi user
 1. Pull down the code into ~/BlazorMirror on your RaspberryPi from GitHub.
+1. If you haven't already, sign up for the free AccuWeather API to get a key. Also find your location key using [this API endpoint](https://developer.accuweather.com/accuweather-locations-api/apis/get/locations/v1/cities/search0)
 1. Create a appsettings.json file in wwwroot and fill out the values based on the following example:
 
    ```json
